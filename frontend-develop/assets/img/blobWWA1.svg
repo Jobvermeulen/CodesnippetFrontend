@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="948.707" height="127.308" viewBox="0 0 948.707 127.308">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.1;
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        filter: url(#Path_1472);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.969" y1="1.154" x2="0.159" y2="0.133" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#43ffd4"/>
+      <stop offset="1" stop-color="#0093ff"/>
+    </linearGradient>
+    <filter id="Path_1472" x="0" y="0" width="948.707" height="127.308" filterUnits="userSpaceOnUse">
+      <feOffset dy="40" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feFlood flood-color="#c5c3f9" flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Path_1472-2" data-name="Path 1472" class="cls-1" d="M7578.688-388.011H6629.981S6831.227-515.318,7068.4-515.318,7578.688-388.011,7578.688-388.011Z" transform="translate(7590.69 -435.01) rotate(180)"/>
+  </g>
+</svg>

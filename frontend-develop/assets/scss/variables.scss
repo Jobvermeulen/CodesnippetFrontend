@@ -1,0 +1,45 @@
+// colors
+$_primary: #EB5E28;
+$_secondary: #4ECDC4;
+
+$_orange: #FF9300;
+$_light-green: #AEC3B0;
+$_dark-blue: #192026;
+$_light-blue: #598392;
+$_dark-gray: #525252;
+$_egg-white: #EFF6E0;
+$_light-gray: #fafbfc;
+
+$_white: #ffffff;
+$_black: #0F0F0F;
+$_menu_gray: rgba(0,0,0,0.32000);
+$_modal_gradient-1: #404040;
+$_modal_gradient-2: #282828;
+
+$_background_page_color: #282828;
+$_blue: #0093FF;
+$_green-gradiant: #43FFD4;
+
+$_blue-gradiant-1: $_green-gradiant;
+$_blue-gradiant-2: $_blue;
+$_orange-gradiant-1: #FF9300;
+$_orange-gradiant-2: #FFD343;
+
+
+$color_list: ("_primary": $_primary, "_secondary": $_secondary, "_light-green": $_light-green, "_light-blue": $_light-blue, "_dark-blue": $_dark-blue, "_dark-gray": $_dark-gray,
+        "_egg-white": $_egg-white);
+
+
+// font-sizes
+$xl: 2.5rem;
+$lg: 1.625rem;
+$ml: 22px;
+$md: 1.25rem;
+$md_mobile: 1.15rem;
+$no: 1rem;
+$ms: 14px;
+$sm: 12px;
+
+$font-family-base: "Ubuntu", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$_transition_cubic: cubic-bezier(0.77, 0.2, 0.05, 1.0);

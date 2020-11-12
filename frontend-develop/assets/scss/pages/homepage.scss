@@ -1,0 +1,121 @@
+.homepage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 300px;
+
+    .regular_txt {
+        margin: 20px 0 50px 0;
+        color: $_white;
+        max-width: 500px;
+    }
+
+    &__text-left,
+    &__text-right {
+        width: 50%;
+
+        .blobSVG {
+            position: absolute;
+            top: -50px;
+            right: -250px;
+            opacity: 0.5;
+            z-index: -10;
+            width: 1000px;
+        }
+
+        .computersSVG {
+            width: 700px;
+        }
+    }
+
+    &__mobileSVG {
+        display: none;
+    }
+
+    .button_special {
+        margin-top: 12px;
+    }
+
+    &__underBlob {
+        position: absolute;
+        bottom: 0;
+        right: -150px;
+        opacity: 0.1;
+        height: 200px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .homepage {
+        padding-bottom: 200px;
+
+        &__mobileSVG {
+            display: block;
+            height: 500px;
+        }
+
+        &__desktopSVG {
+            display: none;
+        }
+
+        &__underBlob {
+            height: 150px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .homepage {
+        &__text-left {
+            width: 70%;
+        }
+
+        &__text-right {
+            width: 30%;
+            align-self: center;
+
+            .blobSVG {
+                top: 100px;
+                width: 800px;
+            }
+        }
+
+        &__mobileSVG {
+            height: 350px;
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .homepage {
+        flex-direction: column;
+
+        &__text-left,
+        &__text-right {
+            width: 100%;
+            position: unset;
+
+            .blobSVG {
+                top: 0px;
+                left: 0;
+            }
+
+            p {
+                font-size: $md_mobile;
+            }
+        }
+
+        &__mobileSVG {
+            display: none;
+        }
+
+        .button_special {
+            width: 100%;
+        }
+
+        &__underBlob {
+            height: 125px;
+        }
+    }
+}

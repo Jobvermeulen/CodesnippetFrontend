@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url("~assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "UbuntuBold";
+    src: url("~assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "UbuntuBoldItalic";
+    src: url("~assets/fonts/Ubuntu-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "UbuntuItalic";
+    src: url("~assets/fonts/Ubuntu-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "UbuntuMedium";
+    src: url("~assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "UbuntuMediumItalic";
+    src: url("~assets/fonts/Ubuntu-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "UbuntuLight";
+    src: url("~assets/fonts/Ubuntu-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "UbuntuLightItalic";
+    src: url("~assets/fonts/Ubuntu-LightItalic.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+button,
+label,
+input{
+    font-family: $font-family-base;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "UbuntuBold";
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: $lg;
+}
+
+h5 {
+    font-size: $md;
+    font-family: "UbuntuMedium";
+}
+
+h6{
+    font-family: "UbuntuBoldItalic";
+}
+
+.nav {
+    .menu {
+        &--brand {
+            font-size: 4rem;
+            font-family: "UbuntuBold";
+        }
+
+        ul {
+            li {
+                a {
+                    font-size: $no;
+                    font-family: "UbuntuMedium";
+                }
+            }
+        }
+    }
+}
+
+.regular_txt, label {
+    font-size: $md;
+    font-family: Ubuntu;
+
+    &__section {
+        font-family: "UbuntuLight";
+        color: $_white;
+    }
+}
+
+.special_glow_txt {
+    /* Fallback: Set a background color. */
+    background-color: $_white;
+
+    /* Create the gradient. */
+    background-image: linear-gradient(-30deg, $_green-gradiant, $_blue);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.headerSection {
+    color: $_orange;
+    font-family: "UbuntuLight";
+
+    &__underline {
+        color: $_white;
+        font-family: "UbuntuBold";
+        text-transform: uppercase;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

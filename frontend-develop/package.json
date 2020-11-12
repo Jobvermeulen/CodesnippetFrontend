@@ -1,0 +1,34 @@
+{
+    "name": "codesnippet-frontend",
+    "version": "1.0.0",
+    "description": "CodeSnippets for finding back snippets of your code",
+    "author": "Job Vermeulen &amp; Thomas Lamars",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "@codesnippet/editor": "^1.0.6",
+        "@nuxtjs/axios": "^5.10.3",
+        "@nuxtjs/dotenv": "^1.4.0",
+        "@nuxtjs/moment": "^1.6.1",
+        "animejs": "^3.2.0",
+        "bootstrap-vue": "^2.13.1",
+        "core-js": "^2.6.5",
+        "dotenv": "^8.2.0",
+        "fs": "0.0.1-security",
+        "jquery": "^3.5.1",
+        "jsonwebtoken": "^8.5.1",
+        "nuxt": "^2.0.0",
+        "nuxt-i18n": "^6.11.1",
+        "popper.js": "^1.16.1",
+        "vue-notification": "^1.3.20"
+    },
+    "devDependencies": {
+        "node-sass": "^4.14.1",
+        "sass-loader": "^8.0.2"
+    }
+}

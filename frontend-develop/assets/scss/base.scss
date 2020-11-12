@@ -1,0 +1,14 @@
+body {
+    background: $_background_page_color;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#__nuxt {
+    width: 100vw;
+    overflow: hidden;
+}
+
+p {
+    margin: 0;
+}

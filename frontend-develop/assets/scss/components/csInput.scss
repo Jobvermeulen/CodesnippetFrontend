@@ -1,0 +1,17 @@
+.csInput {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        padding-bottom: 10px;
+        margin: 0;
+    }
+
+    input {
+        background: $_black;
+        color: $_white;
+        border: none;
+        border-radius: 10px;
+        padding: 13px 16px;
+    }
+}
